@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-tetris
+react와 hooks를 사용해 테트리스 만드는 강좌를 보고 제작했다.  
+[강좌 - https://www.youtube.com/watch?v=ZGOaCxX8HIU&t=8334s]  
 
-## Available Scripts
+![tetris](https://user-images.githubusercontent.com/34911173/67923850-606e2780-fbf2-11e9-9598-24d37a0f0903.PNG)
 
-In the project directory, you can run:
+# 빠른시작
 
-### `npm start`
+## 클론
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git clone https://github.com/Lavegaa/react-tetris.git
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+cd number-game
+```
 
-### `npm test`
+## dependencies 설치
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install
+```
 
-### `npm run build`
+or
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+yarn
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## 시작
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `npm run eject`
+or
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+yarn start
+```
+# hooks
+## useInterval
+강좌에서 주어지는 hook이다. 테트리스 블록이 시간마다 내려가는 것을 도와준다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## usePlayer
+현재 내가 움직이는 block에 관한 hook이다. 회전, 리셋등의 기능이 있다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## useStage
+게임의 판을 그려주는 hook이다. 쌓여진 블록들의 정보도 처리해준다.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# 기타
+## tetrominos.js
+블록에 대한 정보(모양, 색)를 가지고 있다. randomTetromino함수에서는 key값에 따라 랜덤으로 블록을 생성해준다.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
