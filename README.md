@@ -12,10 +12,6 @@ react와 hooks를 사용해 테트리스 만드는 강좌를 보고 제작했다
 git clone https://github.com/Lavegaa/react-tetris.git
 ```
 
-```
-cd number-game
-```
-
 ## dependencies 설치
 
 ```
